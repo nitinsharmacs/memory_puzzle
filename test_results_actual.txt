@@ -1,0 +1,124 @@
+
+====================
+Test Case for : update_cells_string() function
+====================
+
+Test Case : Valid Inputs
+--------------------
+PASS | Expected : A ? C ? | Actual : A ? C ?
+PASS | Expected : ? B C ? | Actual : ? B C ?
+PASS | Expected : A ? C ? D ? | Actual : A ? C ? D ?
+PASS | Expected : A B C ? ? ? | Actual : A B C ? ? ?
+
+====================
+Test Case for : validate_cell_position function
+====================
+
+Test Case : Valid cell number
+--------------------
+PASS | Expected : 0 | Actual : 0
+PASS | Expected : 0 | Actual : 0
+
+Test Case : Valid flipped cell number
+--------------------
+PASS | Expected : 1 | Actual : 1
+PASS | Expected : 1 | Actual : 1
+
+Test Case : InValid cell number
+--------------------
+PASS | Expected : 2 | Actual : 2
+PASS | Expected : 2 | Actual : 2
+
+====================
+Test Case for : show_grid() function
+====================
+
+Test Case : Valid
+--------------------
+Row x Columns : 4 x 4
++-----+-----+-----+-----+
+|  A  |  B  |  C  |  ?  |
++-----+-----+-----+-----+
+|  D  |  ?  |  E  |  F  |
++-----+-----+-----+-----+
+|  G  |  H  |  I  |  ?  |
++-----+-----+-----+-----+
+|  W  |  P  |  ?  |  ?  |
++-----+-----+-----+-----+
+
+Row x Columns : 2 x 3
++-----+-----+-----+
+|  A  |  B  |  C  |
++-----+-----+-----+
+|  ?  |  D  |  ?  |
++-----+-----+-----+
+
+Row x Columns : 2 x 2
++-----+-----+
+|  A  |  B  |
++-----+-----+
+|  C  |  ?  |
++-----+-----+
+
+Row x Columns : 2 x 8
++-----+-----+-----+-----+-----+-----+-----+-----+
+|  A  |  B  |  C  |  ?  |  D  |  ?  |  E  |  F  |
++-----+-----+-----+-----+-----+-----+-----+-----+
+|  G  |  H  |  I  |  ?  |  W  |  P  |  ?  |  ?  |
++-----+-----+-----+-----+-----+-----+-----+-----+
+
+Row x Columns : 1 x 8
++-----+-----+-----+-----+-----+-----+-----+-----+
+|  A  |  B  |  C  |  ?  |  D  |  ?  |  E  |  F  |
++-----+-----+-----+-----+-----+-----+-----+-----+
+
+
+====================
+Test Case for : prompt_move_message() function
+====================
+
+Test Cases
+--------------------
+PASS | Expected : Enter a cell to reveal :  | Actual : Enter a cell to reveal : 
+PASS | Expected : Guess a cell to match :  | Actual : Guess a cell to match : 
+PASS | Expected : Enter a cell to reveal :  | Actual : Enter a cell to reveal : 
+
+====================
+Test Case for : validate_moves() function
+====================
+
+Test Cases
+--------------------
+PASS | Expected : Validating Cells... Wrong match, try again :) | Actual : Validating Cells... Wrong match, try again :)
+PASS | Expected : Validating Cells... Correct Match :) | Actual : Validating Cells... Correct Match :)
+
+====================
+Test Case for : play_moves() function
+====================
+
+Test Case : 2 x 3
+--------------------
+[H[2J+-----+-----+-----+
+|  A  |  B  |  C  |
++-----+-----+-----+
+|  T  |  D  |  ?  |
++-----+-----+-----+
+[H[2J+-----+-----+-----+
+|  A  |  B  |  C  |
++-----+-----+-----+
+|  T  |  D  |  T  |
++-----+-----+-----+
+
+====================
+Test Case for : is_puzzle_possible() function
+====================
+
+Test Cases : Even Number
+--------------------
+PASS | Expected : 0 | Actual : 0
+PASS | Expected : 0 | Actual : 0
+
+Test Cases : Odd Number
+--------------------
+PASS | Expected : 1 | Actual : 1
+PASS | Expected : 1 | Actual : 1
